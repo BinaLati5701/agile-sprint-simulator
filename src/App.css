@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #172b4d;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 140px;
+  background: #f3f2f1;
+  color: #323130;
+  padding: 0;
+  border-right: 1px solid #d2d0ce;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.sidebar h2 {
+  font-size: 15px;
+  padding: 16px 14px;
+  margin: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #d2d0ce;
+  text-align: left;
+}
+
+.sidebar p {
+  margin: 0;
+  padding: 11px 14px;
+  border-radius: 0;
+  cursor: pointer;
+  color: #323130;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.sidebar p:hover {
+  background: #e1dfdd;
+}
+
+.sidebar p.active,
+.active {
+  background: #d0d0d0;
+  color: #000000;
+  font-weight: 600;
+}
+.main {
+  flex: 1;
+  padding: 8px 16px;
+}
+
+.subtitle {
+  color: #64748b;  
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.cards {
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.card {
+  padding: 12px;
+  border-radius: 2px;
+  box-shadow: none;
+  border: 1px solid #d1d5db;
+  background: white;
+}
+
+.card p {
+  font-size: 18px;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.column {
+  background: #e2e8f0;
+  padding: 16px;
+  border-radius: 14px;
+  min-height: 360px;
+}
+
+.column h3 {
+  margin-top: 0;
+}
+
+.task {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.task {
+  border-left: 6px solid #3b82f6;
+}
+.backlog {
+  background: #e2e8f0;
+}
+
+.progress {
+  background: #dbeafe;
+}
+
+.testing {
+  background: #fef3c7;
+}
+
+.done {
+  background: #dcfce7;
+}
+
+.active {
+  background: #dbeafe;
+}
+.work-item {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border-left: 6px solid #3b82f6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.work-id {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.work-item button {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 28px 0 10px;
+}
+
+.board-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.board-header button {
+  background: white;
+  border: 1px solid #cbd5e1;
+  padding: 7px 12px;
+  cursor: pointer;
+  color: #2563eb;
+}
+
+.ado-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  min-height: 430px;
+}
+
+.ado-column {
+  border-right: 1px solid #d1d5db;
+  padding: 8px;
+  background: #f8fafc;
+}
+
+.ado-column:last-child {
+  border-right: none;
+}
+
+.ado-column-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.ado-card {
+  background: white;
+  border-left: 4px solid #0078d4;
+  border-radius: 0;
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 13px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.ado-card p {
+  margin: 6px 0;
+}
+
+.ado-card small {
+  color: #6b7280;
+  font-size: 11px;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  color: #605e5c;
+  font-size: 12px;
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 6px;
+}
+
+.sprint-dates {
+  color: #605e5c;
+}
+.board-tabs {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid #d1d5db;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+  font-size: 13px;
+}
+
+.tab {
+  padding-bottom: 8px;
+  cursor: pointer;
+  color: #605e5c;
+}
+
+.active-tab {
+  border-bottom: 2px solid #0078d4;
+  color: #000;
+  font-weight: 600;
+}
+
+.new-item-btn,
+.column-btn {
+  background: white;
+  border: 1px solid #d1d5db;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.column-btn {
+  background: #fef08a;
+}
+.sprint-select {
+  height: 28px;
+  border: 1px solid #d1d5db;
+  background: white;
+  font-size: 12px;
+  padding: 0 8px;
+  color: #323130;
+}
