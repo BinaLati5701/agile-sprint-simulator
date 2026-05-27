@@ -62,3 +62,5 @@ http://localhost:5173
 - Database integration
 - Create new work item modal
 - Responsive mobile layout
+- <img width="1478" height="753" alt="image" src="https://github.com/user-attachments/assets/5095ab3d-410f-465e-99fc-41c85382e62c" />
+
